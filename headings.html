@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lnag="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>headings</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- codigo para el nav bar responsivo, eso de jquery es una libreria para facilitar el uso 
+        de las funciones -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+
+</head>
+
+
+<body>
+    <!--nav bar, que no sirve muy bien aiuda :'( -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="navBar" id="navBar">
+        <a href="#">Inicio</a>
+        <a href="#">Miembros</a>
+        <a href="#">Historia</a>
+        <a href="#">Proyectos</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+    </div>
+    <!--esta seccion es para el banner del header si creen que seria mejor que el tamaño se mantuviera
+        fijo cuando cmabies el tamaño de la ventana entonces pueden cambiarlo xd-->
+
+
+    <section class="banner"></section>
+
+    <!-- muestra el grafico del marco, segun yo eso de height 100% es para que un solo grafico cubra toda la pantalla
+        pero pues si no depues lo corregimos -->
+    <div id="marcoiz">
+        <img class="marco_img" src="img/decoratorLeft.jpeg" alt="marco izquierdo" width="70px" height=100%>
+    </div>
+
+    <script src="js/navbar.js"></script>
+</body>
+
+</html>
