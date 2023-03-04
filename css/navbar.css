@@ -1,6 +1,6 @@
 .navBar {
     background-color: #D30423;
-    background-image: url("decoratorHorizontal.png");
+    background-image: url("../img/decoratorHorizontal.png");
     overflow: hidden;
 }
 
@@ -60,10 +60,24 @@
     }
 }
 
-#marcoiz {
-    width: 10px;
+.marcoiz {
+    position: absolute;
+    z-index: 10;
+}
+
+.marcoiz img {
+    width: 5.5rem;
     height: 100%;
-    margin-top: -60px;
+    padding: 0;
+    margin-top: -1em;
+}
+
+.footer {
+
+    background-color: blue;
+
+    left: 0rem;
+
 }
 
 /*esto creo que es para que todo lo del html tenga padding y margin de 0 por defecto, no se, lo tuve que medio investigar x'd */
@@ -78,8 +92,9 @@
 nav {
     height: 80px;
     width: 100%;
+    padding: 0;
     background-color: #D30423;
-    background-image: url("/img/decoratorHorizontal.png");
+    background-image: url("../img/decoratorHorizontal.png");
 }
 
 label.Logo {
@@ -112,7 +127,6 @@ nav #icon {
     line-height: 80px;
     float: right;
     margin-right: 40px;
-    cursor: pointer;
     display: none;
 }
 
@@ -154,27 +168,27 @@ nav #icon {
 /*codigo para visualizar el cuerpo y dar espacio para los widgets */
 /* el cuerpo es de diseño grid, se va a dividir en dos grids, una para el cuerpo normal y otra para los widgets 
 dentro del grid del cuerpo, va a haber mas grids para cada seccion */
-.body{
+.body {
     position: absolute;
-    width: 1409px;
     height: 100%;
-    left: 110px;
+    left: 6.5rem;
+    right: 2rem;
     top: 490px;
     display: grid;
-    grid-template-columns: 75% 1fr;
+
     gap: 2em;
 }
 
 
 
-.widgets{
+.widgets {
     background-color: #D9D9D9;
 }
 
 
 /* este codigio es para separar las secciones por columnas, estoy experimentando con el
     pero se ve prometedor para poder tener un mejor orden en la pagina y menos lineas de codigo */
-.columns-txt-left{
+.columns-txt-left {
     color: #000;
     display: grid;
     grid-template-columns: 60% 1fr;
@@ -185,7 +199,7 @@ dentro del grid del cuerpo, va a haber mas grids para cada seccion */
 
 
 
-.columns-txt-left img{
+.columns-txt-left img {
     margin-top: -4.6rem;
     width: 336px;
     height: 344px;
@@ -193,7 +207,7 @@ dentro del grid del cuerpo, va a haber mas grids para cada seccion */
 
 
 /* clases para los titulos */
-.important-tittle-left{
+.important-tittle-left {
     margin-top: 90px;
     margin-bottom: 2rem;
     margin-left: 3rem;
@@ -201,7 +215,7 @@ dentro del grid del cuerpo, va a haber mas grids para cada seccion */
     font-size: 39px;
 }
 
-.important-tittle-right{
+.important-tittle-right {
     margin-top: 90px;
     margin-bottom: 2rem;
     margin-right: 3rem;
@@ -210,7 +224,7 @@ dentro del grid del cuerpo, va a haber mas grids para cada seccion */
     text-align: right;
 }
 
-.important-tittle-center{
+.important-tittle-center {
     margin-top: 90px;
     margin-bottom: 2rem;
     text-align: center;
@@ -218,7 +232,7 @@ dentro del grid del cuerpo, va a haber mas grids para cada seccion */
     font-size: 39px;
 }
 
-.subtittle-right{
+.subtittle-right {
     margin-top: 80px;
     margin-bottom: 1rem;
     text-align: center;
@@ -226,8 +240,8 @@ dentro del grid del cuerpo, va a haber mas grids para cada seccion */
 }
 
 
-.columns-txt-right{
-    color:#000;
+.columns-txt-right {
+    color: #000;
     display: grid;
     grid-template-columns: 1fr 60%;
     gap: 1em;
@@ -237,19 +251,19 @@ dentro del grid del cuerpo, va a haber mas grids para cada seccion */
 
 
 
-.columns-txt-right img{
+.columns-txt-right img {
     margin-top: -4rem;
     width: 405px;
     height: 378px;
 }
 
-.columns-txt-right p{
+.columns-txt-right p {
     margin-top: 3rem;
 }
 
 
 
-.center-bigrid{
+.center-bigrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: #000;
@@ -259,18 +273,16 @@ dentro del grid del cuerpo, va a haber mas grids para cada seccion */
 }
 
 
-.center-bigrid p{
+.center-bigrid p {
     margin-top: 4rem;
 }
 
-
-
-
-.crono{
+.crono {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-.circle-r{
+
+.circle-r {
     margin-top: 6rem;
     width: 267px;
     height: 266px;
@@ -278,14 +290,14 @@ dentro del grid del cuerpo, va a haber mas grids para cada seccion */
     border-radius: 200px;
 }
 
-.circle-r p{
+.circle-r p {
     position: absolute;
     text-align: center;
     color: #000;
 }
 
 
-.circle-bl{
+.circle-bl {
     margin-top: 6rem;
     width: 267px;
     height: 266px;
@@ -295,7 +307,7 @@ dentro del grid del cuerpo, va a haber mas grids para cada seccion */
     z-index: 1;
 }
 
-.circle-y{
+.circle-y {
     margin-top: 6rem;
     width: 267px;
     height: 266px;
@@ -305,7 +317,7 @@ dentro del grid del cuerpo, va a haber mas grids para cada seccion */
     z-index: 1;
 }
 
-.circle-rs{
+.circle-rs {
     margin-top: 6rem;
     width: 267px;
     height: 266px;
@@ -322,7 +334,7 @@ dentro del grid del cuerpo, va a haber mas grids para cada seccion */
 /* esto que dice @media es para que el diseño de la nav bar sea responsivo */
 @media(max-width: 1048px) {
     .box:hover {
-        cursor: pointer;
+        cursor: auto;
     }
 
     label.Logo {
@@ -342,9 +354,10 @@ dentro del grid del cuerpo, va a haber mas grids para cada seccion */
 
 
 @media(max-width: 909px) {
-    .body{
+    .body {
         width: 100%;
     }
+
     #marcoiz {
         width: 30px;
         height: 100%;
@@ -395,7 +408,7 @@ dentro del grid del cuerpo, va a haber mas grids para cada seccion */
     }
 
     .box:hover {
-        cursor: pointer;
+        cursor: auto;
     }
 
     nav ul.show {
@@ -409,20 +422,7 @@ dentro del grid del cuerpo, va a haber mas grids para cada seccion */
 
 /* banner */
 .banner {
-    background: url(./img/banner.jpeg) no-repeat;
+    background: url(../img/banner.jpeg) no-repeat;
     background-size: 100%;
     height: 31rem;
-}
-
-footer{
-    margin-left: -110px;
-    width: 98.9vw;
-
-    background-color: #04AA6D;
-    display: grid;
-    grid-template-columns: 1fr 60% 1fr;
-}
-
-footer img{
-    margin-left: 4rem;
 }
