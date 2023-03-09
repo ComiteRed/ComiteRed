@@ -1,0 +1,116 @@
+/* variables */
+
+/*:root{
+
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 5% 80% 15%;
+    grid-template-rows: 9% 40% 2fr 20%;
+    grid-template-areas: /* define cuanto espacio va a ocupar cada cosa en cada columna y fila 0.1fr 2fr 0.4fr; */
+    "nav nav nav" 
+    "Banner Banner Banner"
+    "SideDecor Main Widgets"
+    "footer footer footer";
+}
+
+nav{
+    background-color: aqua;
+    grid-area: nav; /* grid-area es para asignar un identificador a cada espacio para poder acomodarlo */
+}
+
+a{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+#Banner{
+    background-color: blueviolet;
+    grid-area: Banner;
+}
+
+#SideDecor{
+    background-color: burlywood;
+    grid-area: SideDecor;
+}
+
+#Widgets{
+    background-color: brown;
+    grid-area: Widgets;
+}
+
+#Main{
+    background-color: chartreuse;
+    grid-area: Main;
+}
+
+footer{
+    background-color: crimson;
+    grid-area: footer;
+}
+
+
+.subcontainer-Index{
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 0.8em;
+    font-size: 24px;
+    margin-right: 2.5rem;
+}
+
+.subcontainer-Index img{    /* esto nada mas lo puse porque me molesta que las imagenes esten tan juntas del texto pero si quieren quitenlo xd */
+    margin-top: -1rem;
+}   
+
+
+/* TITULOS */
+
+h1{
+    margin-top: 4rem;
+    font-size: 36px;
+}
+
+.tittle-left{
+    margin-left: 3rem;
+}
+
+.tittle-right{
+    text-align: right;
+    margin-right: 3rem;
+}
+
+.tittle-center{
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 45% 2fr 35%;
+        grid-template-areas: 
+        "nav"
+        "Banner"
+        "Main"
+        "footer";
+    }
+
+    .subcontainer-Index{
+        font-size: 15px;
+    }
+
+   
+}
