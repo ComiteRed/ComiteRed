@@ -77,7 +77,7 @@ footer{
 .center-bigrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 1rem;
+    margin-top: 1rem; /* ahora tienen espacio arriba para que no esté pegado */
     margin-right: 1rem;
     color: #000;
     font-size: 20px;
@@ -150,7 +150,7 @@ h1{
    
 }
 
-.responsive {
+.responsive {  /* hace las fotos responsivas, solo las fotos de perros la tienen */
     width: 100%;
-    height: auto;
+    height: auto; /* hace que cambie el tamaño de la foto con la página pero también afecta su tamaño */
   }
