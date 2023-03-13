@@ -15,8 +15,8 @@
 .container{
     display: grid;
     height: 100vh;
-    grid-template-columns: 5% 85% 15%;
-    grid-template-rows: 9% 40% 2fr 20%;
+    grid-template-columns: 6% 94% ;
+    grid-template-rows: 9% 30% 2fr 20%;
     grid-template-areas: /* define cuanto espacio va a ocupar cada cosa en cada columna y fila 0.1fr 2fr 0.4fr; */
     "nav nav nav" 
     "Banner Banner Banner"
@@ -44,10 +44,6 @@ a{
     grid-area: SideDecor;
 }
 
-#Widgets{
-    background-color: brown;
-    grid-area: Widgets;
-}
 
 #Main{
     background-color: chartreuse;
@@ -79,6 +75,7 @@ footer{
     grid-template-columns: 1fr 1fr;
     margin-top: 1rem; /* ahora tienen espacio arriba para que no esté pegado */
     margin-right: 1rem;
+    margin-left: 1rem;
     color: #000;
     font-size: 20px;
     gap: 1em;
@@ -131,6 +128,11 @@ h1{
     text-align: right;
 }
 
+.responsive {  /* hace las fotos responsivas, solo las fotos de perros la tienen */
+    width: 100%;
+    height: auto; /* hace que cambie el tamaño de la foto con la página pero también afecta su tamaño */
+}
+
 
 @media only screen and (max-width: 600px){
     .container{
@@ -146,11 +148,6 @@ h1{
     .subcontainer-Index{
         font-size: 15px;
     }
-
    
 }
 
-.responsive {  /* hace las fotos responsivas, solo las fotos de perros la tienen */
-    width: 100%;
-    height: auto; /* hace que cambie el tamaño de la foto con la página pero también afecta su tamaño */
-  }
