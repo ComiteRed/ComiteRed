@@ -12,6 +12,10 @@
 }
 
 
+body{
+    width: 100%;
+}
+
 .container{
     display: grid;
     height: 100vh;
@@ -20,7 +24,7 @@
     grid-template-areas: /* define cuanto espacio va a ocupar cada cosa en cada columna y fila 0.1fr 2fr 0.4fr; */
     "nav nav nav" 
     "Banner Banner Banner"
-    "SideDecor Main Widgets"
+    "SideDecor Main Main"
     "footer footer footer";
 }
 
@@ -59,6 +63,7 @@ footer{
 .subcontainer-Index{
     margin-left: 1.5rem;
     margin-top: 1.5rem;
+    margin-bottom: 6rem;
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 0.8em;
@@ -70,10 +75,13 @@ footer{
     margin-top: -2rem;
 }   
 
+
+
+/*
 .center-bigrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 1rem; /* ahora tienen espacio arriba para que no esté pegado */
+    margin-top: 1rem; 
     margin-right: 1rem;
     margin-left: 1rem;
     color: #000;
@@ -81,13 +89,17 @@ footer{
     gap: 1em;
     text-align: center;
 }
-
+*/
 
 /* TITULOS */
 
 h1{
     margin-top: 4rem;
     font-size: 36px;
+}
+
+h2{
+    margin-top: 4rem;
 }
 
 .tittle-left{
@@ -103,6 +115,10 @@ h1{
     text-align: center;
 }
 
+
+
+
+/*
 .important-tittle-center {
     margin-top: 90px;
     margin-bottom: 2rem;
@@ -128,6 +144,13 @@ h1{
     text-align: right;
 }
 
+*/
+
+
+
+
+
+
 .responsive {  /* hace las fotos responsivas, solo las fotos de perros la tienen */
     width: 100%;
     height: auto; /* hace que cambie el tamaño de la foto con la página pero también afecta su tamaño */
@@ -135,12 +158,18 @@ h1{
 
 
 @media only screen and (max-width: 600px){
+
+    html{
+        width: 100%;
+        height: 100%;
+    }
     .container{
         grid-template-columns: 1fr;
-        grid-template-rows: 10% 45% 2fr 35%;
+        grid-template-rows: 10% 41% 4% 2fr 35%;
         grid-template-areas: 
         "nav"
         "Banner"
+        "SideDecor"
         "Main"
         "footer";
     }
