@@ -22,16 +22,87 @@ body{
     grid-template-columns: 6% 94% ;
     grid-template-rows: 9% 30% 2fr 20%;
     grid-template-areas: /* define cuanto espacio va a ocupar cada cosa en cada columna y fila 0.1fr 2fr 0.4fr; */
-    "nav nav nav" 
-    "Banner Banner Banner"
-    "SideDecor Main Main"
-    "footer footer footer";
+    "nav nav" 
+    "Banner Banner"
+    "SideDecor Main"
+    "footer footer";
 }
 
-nav{
-    background-color: aqua;
+
+
+
+nav{        /* otras grids aqui adentro */
+    background-image: url(grafico-21.png);
+    background-color: #D30423;
+    
+    
+    
     grid-area: nav; /* grid-area es para asignar un identificador a cada espacio para poder acomodarlo */
+    display: grid;
+    width: 100%;
+    height: 4.2rem;
+    grid-template-columns: 1fr 50% 0.7fr;
+    position: fixed;
 }
+
+nav .logo{
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: azure;
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
+
+nav .buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+nav li:hover{
+    /* agregar mas sombra en las cajitas */
+    scale: 1.06;
+    border-radius: 0.4rem;
+    box-shadow: 0 11px 12px rgba(0, 0, 0, 0.3);
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: 1;
+}
+
+nav .dropdown-menu{
+    display: none;
+}
+
+
+.bars-menu{
+    color: azure;
+    display: none;
+}
+nav li{
+    
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    margin-top: 1.5rem;
+    display: inline-block;
+    text-decoration: none;
+    
+    
+}
+
+nav li a{
+    color: azure;
+    
+    margin: 6rem  1.5rem;
+    margin-top: 3rem;
+    font-size: 1.4rem;
+    
+}
+
+
+
+
+
 
 a{
     margin-top: 1rem;
@@ -156,6 +227,23 @@ h2{
     height: auto; /* hace que cambie el tamaño de la foto con la página pero también afecta su tamaño */
 }
 
+.dropdown-menu{
+    position: absolute;
+    top: 4rem;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 0, 0, 0.39);
+    border-radius: 0.3rem;
+    overflow: hidden;
+}
+
+.dropdown-menu li{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 @media only screen and (max-width: 600px){
 
@@ -163,6 +251,34 @@ h2{
         width: 100%;
         height: 100%;
     }
+
+    nav{
+        height: 4.5rem;
+       grid-template-columns: 70% 30%;
+       grid-template-areas: "logo bars";
+    }
+
+
+    nav .logo{
+        margin-left: 8rem;
+        margin-top: 0.7rem;
+        font-size: 2.8rem;
+        grid-area: logo;
+        
+    }
+
+    nav li{
+        display: none;
+    }
+
+    nav .bars-menu{
+        display: grid;
+        margin-top: 1.5rem;
+        font-size: 2.1rem;
+        grid-area: bars;
+    }
+
+    
     .container{
         grid-template-columns: 1fr;
         grid-template-rows: 10% 41% 4% 2fr 35%;
