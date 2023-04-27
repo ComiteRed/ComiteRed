@@ -338,9 +338,6 @@ dentro del grid del cuerpo, va a haber mas grids para cada seccion */
 }
 
 
-
-
-
 /* esto que dice @media es para que el diseño de la nav bar sea responsivo */
 @media(max-width: 1048px) {
     .box:hover {

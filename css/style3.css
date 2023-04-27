@@ -20,7 +20,7 @@ body{
     display: grid;
     height: 100vh;
     grid-template-columns: 6% 94% ;
-    grid-template-rows: 9% 30% 2fr 20%;
+    grid-template-rows: 9% 30% 2fr 35%;
     grid-template-areas: /* define cuanto espacio va a ocupar cada cosa en cada columna y fila 0.1fr 2fr 0.4fr; */
     "nav nav nav" 
     "Banner Banner Banner"
@@ -48,15 +48,15 @@ a{
     grid-area: SideDecor;
 }
 
-
 #Main{
     background-color: chartreuse;
     grid-area: Main;
 }
 
 footer{
-    background-color: crimson;
+    background-image: url("../img/fondosimplee.jpg");
     grid-area: footer;
+    background-size: 100%;
 }
 
 
@@ -115,18 +115,20 @@ h2{
     text-align: center;
 }
 
-
-
-
 /*
 .important-tittle-center {
-    margin-top: 90px;
-    margin-bottom: 2rem;
-    text-align: center;
-    color: #000;
-    font-size: 39px;
-}
+    DUC IN ALTUM
+    position: absolute;
+    width: 716.25px;
+    height: 73.15px;
+    left: 390px;
+    top: 67px;
 
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
 .important-tittle-left {
     margin-top: 90px;
     margin-bottom: 2rem;
@@ -143,7 +145,6 @@ h2{
     font-size: 39px;
     text-align: right;
 }
-
 */
 
 
@@ -165,7 +166,7 @@ h2{
     }
     .container{
         grid-template-columns: 1fr;
-        grid-template-rows: 10% 41% 4% 2fr 35%;
+        grid-template-rows: 10% 41% 4% 2fr 25%;
         grid-template-areas: 
         "nav"
         "Banner"
@@ -178,5 +179,44 @@ h2{
         font-size: 15px;
     }
    
+}
+
+/*Grid footer*/
+
+.container_2{
+    display: grid;
+    height: 30vh;
+    grid-template-columns: 25% 50% 25% ;
+    grid-template-rows: 10%;
+    grid-template-areas: /* define cuanto espacio va a ocupar cada cosa en cada columna y fila 0.1fr 2fr 0.4fr; */
+    "foto duc social";
+}
+
+#foto{
+    grid-area: foto;
+    margin-top: 1.7rem;
+    margin-left: 3rem;
+}
+#duc{
+    grid-area: duc;
+    color: white;
+    text-align: center;
+    margin-top: 4.5rem;
+}
+#social{
+    grid-area: social;
+    margin-top: 3.5rem;
+    text-align: left;
+    color: white;
+    margin-left: 4rem;
+}
+
+.circle-wh {
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    border-radius: 200px;
+    margin-left: 3.5rem;
+    z-index: 1;
 }
 
