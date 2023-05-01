@@ -29,7 +29,7 @@ body{
 }
 
 nav{
-    background-color: aqua;
+    background-color: rgba(246, 0, 0, 0.8);
     grid-area: nav; /* grid-area es para asignar un identificador a cada espacio para poder acomodarlo */
 }
 
@@ -38,18 +38,18 @@ a{
     margin-bottom: 1rem;
 
 }
-#Banner{
-    background-color: blueviolet;
+#Banner{ /* falta agregar la foto */
+    background-color: rgba(107, 0, 0, 0.71);
     grid-area: Banner;
 }
 
-#SideDecor{
-    background-color: burlywood;
+#SideDecor{ /* falta agregar la foto */
+    background-color: whitesmoke;
     grid-area: SideDecor;
 }
 
 #Main{
-    background-color: chartreuse;
+    background-color: white;
     grid-area: Main;
 }
 
@@ -146,10 +146,6 @@ h2{
     text-align: right;
 }
 */
-
-
-
-
 
 
 .responsive {  /* hace las fotos responsivas, solo las fotos de perros la tienen */
