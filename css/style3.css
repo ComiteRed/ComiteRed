@@ -198,13 +198,14 @@ h2{
     color: white;
     text-align: center;
     margin-top: 4.5rem;
+    font-size: 5rem; 
+    font-style: inherit; 
+    padding-left: 1.5rem;
 }
 #social{
     grid-area: social;
-    margin-top: 3.5rem;
-    text-align: left;
-    color: white;
     margin-left: 4rem;
+    margin-top: 2rem;
 }
 
 .circle-wh {
@@ -212,7 +213,72 @@ h2{
     height: 180px;
     background-color: white;
     border-radius: 200px;
-    margin-left: 3.5rem;
+    margin-left: 2.5rem;
+    z-index: 1;
+}
+.circle-logo {
+    width: 185px;
+    height: 170px;
+    border-radius: 250px;
+    padding-top: 0.4rem;
+    margin-left: -0.1rem;
     z-index: 1;
 }
 
+@media(max-width: 1200px){
+    #duc{
+        font-size: 4rem;
+        padding-left: 1rem;
+    }
+}
+
+/*Grid social*/
+
+.container_3{
+    display: grid;
+    height: 30vh;
+    grid-template-columns: 25% 75% ;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas:
+    "ls ns"
+    "li ni"
+    "lf nf"
+    "lc nc";
+}
+
+#ls{
+    grid-area: ls;
+}
+
+#ns{
+    grid-area: ns;
+    text-align: left;
+    color: white;
+}
+#li{
+    grid-area: li;
+}
+
+#ni{
+    grid-area: ni;
+    text-align: left;
+    color: white;
+}
+#lf{
+    grid-area: lf;
+}
+
+#nf{
+    grid-area: nf;
+    text-align: left;
+    color: white;
+}
+#lc{
+    grid-area: lc;
+}
+
+#nc{
+    grid-area: nc;
+    text-align: left;
+    color: white;
+}
