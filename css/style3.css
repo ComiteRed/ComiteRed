@@ -181,7 +181,7 @@ h2{
 
 .container_2{
     display: grid;
-    height: 30vh;
+    height: 35vh;
     grid-template-columns: 25% 50% 25% ;
     grid-template-rows: 10%;
     grid-template-areas: /* define cuanto espacio va a ocupar cada cosa en cada columna y fila 0.1fr 2fr 0.4fr; */
@@ -236,9 +236,10 @@ h2{
 
 .container_3{
     display: grid;
-    height: 30vh;
+    padding-top: 2rem;
+    height: 25vh;
     grid-template-columns: 25% 75% ;
-    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-rows: 20% 20% 20% 20%;
     grid-template-areas:
     "ls ns"
     "li ni"
