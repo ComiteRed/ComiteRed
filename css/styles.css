@@ -20,7 +20,7 @@ body{
     display: grid;
     height: 100vh;
     grid-template-columns: 6% 94% ;
-    grid-template-rows: 9% 30% 2fr 20%;
+    grid-template-rows: 9% 30% 2fr 30%;
     grid-template-areas: /* define cuanto espacio va a ocupar cada cosa en cada columna y fila 0.1fr 2fr 0.4fr; */
     "nav nav" 
     "Banner Banner"
@@ -110,7 +110,7 @@ a{
 
 }
 #Banner{
-    background-color: blueviolet;
+    background-color: darkred;
     grid-area: Banner;
 }
 
@@ -121,12 +121,12 @@ a{
 
 
 #Main{
-    background-color: chartreuse;
+    background-color: white;
     grid-area: Main;
 }
 
 footer{
-    background-color: crimson;
+    background-image: url(fondosimplee.jpg);
     grid-area: footer;
 }
 
@@ -281,7 +281,7 @@ h2{
     
     .container{
         grid-template-columns: 1fr;
-        grid-template-rows: 10% 41% 4% 2fr 35%;
+        grid-template-rows: 10% 41% 4% 2fr 30%;
         grid-template-areas: 
         "nav"
         "Banner"
@@ -296,3 +296,158 @@ h2{
    
 }
 
+
+/*Grid Footer*/
+
+.container_2{
+    display: grid;
+    height: 30vh;
+    grid-template-columns: 25% 50% 25% ;
+    grid-template-rows: auto;
+    grid-template-areas: /* define cuanto espacio va a ocupar cada cosa en cada columna y fila 0.1fr 2fr 0.4fr; */
+    "foto duc social";
+}
+
+#foto{
+    grid-area: foto;
+    margin-top: 1.7rem;
+    margin-left: 2.5rem;
+}
+#duc{
+    grid-area: duc;
+    color: white;
+    text-align: center;
+    margin-top: 4rem;
+    margin-left: -4 rem;
+    font-size: 4.3rem; 
+    font-style: inherit; 
+    padding-left: -1rem;
+}
+#social{
+    grid-area: social;
+    margin-left: 5rem;
+    margin-top: 1.5rem;
+}
+
+.circle-wh {
+    width: 145px;
+    height: 145px;
+    background-color: white;
+    border-radius: 200px;
+    margin-left: 2.7rem;
+    z-index: 1;
+}
+.circle-logo {
+    width: 150px;
+    height: 135px;
+    border-radius: 250px;
+    padding-top: 0.4rem;
+    margin-left: -0.15rem;
+    z-index: 1;
+}
+
+@media(max-width: 1200px){
+    #duc{
+        font-size: 4rem;
+        padding-left: 1rem;
+    }
+}
+
+/*Grid social*/
+
+.container_3{
+    display: grid;
+    padding-top: 2rem;
+    height: 20vh;
+    grid-template-columns: 10% 90% ;
+    grid-template-rows: 20% 20% 20% 20%;
+    grid-template-areas:
+    "ls ns"
+    "li ni"
+    "lf nf"
+    "lc nc";
+}
+
+#ls{
+    grid-area: ls;
+}
+
+#ns{
+    grid-area: ns;
+    text-align: left;
+    color: white;
+}
+#li{
+    grid-area: li;
+}
+
+#ni{
+    grid-area: ni;
+    text-align: left;
+    color: white;
+}
+#lf{
+    grid-area: lf;
+}
+
+#nf{
+    grid-area: nf;
+    text-align: left;
+    color: white;
+}
+#lc{
+    grid-area: lc;
+}
+
+#nc{
+    grid-area: nc;
+    text-align: left;
+    color: white;
+}
+
+/*Círculos*/
+
+.circle-r {
+    margin-top: 6rem;
+    width: 267px;
+    height: 266px;
+    background-color: #D30423;
+    border-radius: 200px;
+}
+
+.circle-r p {
+    position: absolute;
+    text-align: center;
+    color: #000;
+}
+
+
+.circle-bl {
+    margin-top: 6rem;
+    width: 267px;
+    height: 266px;
+    background-color: #214387;
+    border-radius: 200px;
+    margin-left: -6rem;
+    z-index: 1;
+}
+
+.circle-y {
+    margin-top: 6rem;
+    width: 267px;
+    height: 266px;
+    background-color: #FFB336;
+    border-radius: 200px;
+    margin-left: -6rem;
+    z-index: 1;
+}
+
+.circle-rs {
+    margin-top: 6rem;
+    width: 267px;
+    height: 266px;
+    background-color: #4E0F11;
+    border-radius: 200px;
+    margin-left: -6rem;
+    z-index: 1;
+}
