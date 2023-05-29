@@ -451,3 +451,83 @@ h2{
     margin-left: -6rem;
     z-index: 1;
 }
+
+/*  CARRUSEL DE IMAGENES    */
+
+.subcontainer-one-element{
+    
+    display: grid;
+    font-size: 24px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.wrapper{
+    max-width: 1200px;
+    position: relative;
+}
+
+.wrapper i{
+    background: #fff;
+    height: 46px;
+    width: 46px;
+    text-align: center;
+    position: absolute;
+    line-height: 46px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 11px 12px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper i:first-child{
+    left: -23px;
+    display: none;
+}
+
+.wrapper i:last-child{
+    right: -23px;
+}
+
+.wrapper .carousel{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging{
+    scroll-behavior: auto;
+    cursor: grab;
+}
+
+.carousel.dragging img{
+    pointer-events: none;
+}
+
+.carousel img{
+    height: 340px;
+    object-fit: cover;
+    margin-left: 14px;
+    width: calc(100% / 3);
+}
+
+.carousel img:first-child{
+    margin-left: 0px;
+}
+
+@media screen and (max-width: 900px){
+    .carousel img{
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 550px){
+    .carousel img{
+        width: 100%;
+    }
+}
